@@ -8,10 +8,10 @@ defmodule ThreadRace do
 end
 
 parent = self()
-a = spawn(fn -> ThreadRase.add_nums(parent, 1, 2) end)
-b = spawn(fn -> ThreadRase.add_nums(parent, 2, 3) end)
-c = spawn(fn -> ThreadRase.add_nums(parent, 2, 4) end)
-d = spawn(fn -> ThreadRase.add_nums(parent, 2, 5) end)
+a = spawn(fn -> ThreadRace.add_nums(parent, 1, 2) end)
+b = spawn(fn -> ThreadRace.add_nums(parent, 2, 3) end)
+c = spawn(fn -> ThreadRace.add_nums(parent, 2, 4) end)
+d = spawn(fn -> ThreadRace.add_nums(parent, 2, 5) end)
 
 processes = [a,b,c,d]
 
