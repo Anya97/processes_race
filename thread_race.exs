@@ -1,4 +1,4 @@
-defmodule ThreadRaсe do
+defmodule ThreadRace do
 
   def add_nums(parent, a, b) do
     result = a+b
